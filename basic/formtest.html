@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      <b>상품 주문서</b>
+    </h1>
+    <form action="" method="" name="">
+      <fieldset>
+        <legend>개인정보</legend>
+        <ul>
+          <li>
+            <label for="name">이름</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="여백없이 입력"
+            />
+          </li>
+          <li>
+            <label for="tel">연락처</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="연락가능한 번호"
+            />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>배송지 정보</legend>
+        <ul>
+          <li>
+            <label for="addr">주소</label>
+            <input type="text" name="addr" id="addr" />
+          </li>
+          <li>
+            <label for="hometel"> 전화번호</label>
+            <input type="tel" name="hometel" id="hometel" />
+          </li>
+          <li>
+            <label for="memo">메모</label>
+            <textarea name="memo" id="memo" cols="30" rows="5"></textarea>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>주문 정보</legend>
+        <ul>
+          <li>
+            <label for="antiguaNum">
+              <input type="checkbox" name="antigua" id="antigua" />
+              과테말라 안티구아 (100g)
+            </label>
+            <input
+              type="number"
+              name="antiguaNum"
+              id="antiguaNum"
+              min="0"
+              value="0"
+            />개
+          </li>
+          <li>
+            <label for="madelingNum">
+              <input type="checkbox" name="madeling" id="madeling" />
+              인도네시아 만델링 (100g)
+            </label>
+            <input
+              type="number"
+              name="madelingNum"
+              id="madelingNum"
+              min="0"
+              value="0"
+            />개
+          </li>
+          <li>
+            <label for="dodaNum">
+              <input type="checkbox" name="doda" id="doda" />
+              탐라는도다(블렌딩)(100g)
+            </label>
+            <input
+              type="number"
+              name="dodaNum"
+              id="dodaNum"
+              min="0"
+              value="0"
+            />개
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">주문하기</button>
+      <button type="reset">다시작성</button>
+    </form>
+  </body>
+</html>
